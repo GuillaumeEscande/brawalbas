@@ -1,0 +1,24 @@
+{
+    "name": "backend",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "prebuild": "npm install && rm -rf dist",
+        "build": "tsup src/index.ts"
+    },
+    "dependencies": {
+      "@aws-sdk/client-dynamodb": "^3.734.0",
+      "@aws-sdk/lib-dynamodb": "^3.734.0",
+      "aws-sdk": "^2.1692.0",
+      "uuid": "^8.3.2"
+    },
+    "devDependencies": {
+      "@types/node": "^22.10.10",
+      "@types/uuid": "^8.3.0",
+      "@aws-sdk/types": "^3.734.0",
+      "@types/aws-lambda": "^8.10.147",
+      "tsup": "^8.0.2",
+      "tsx": "^4.7.1",
+      "typescript": "^5.3.3"
+    }
+}
